@@ -3,35 +3,33 @@ public class Main {
 
         System.out.println("Задача 1");
 
+        byte clientOS=1;
 
-        char iOS = 0;
-        char android = 1;
+        boolean android = clientOS == 1;
+        boolean iOS =clientOS == 0;
 
-        byte clientOS = 1;
-
-
-        if (android==clientOS) {
+        if (android) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
-        if (iOS==clientOS) {
+        if (iOS) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
         System.out.println("Задача 2");
 
-        int clientDeviceYear = 2014;
+        int clientDeviceYear = 2015;
 
-        if (android==clientOS && clientDeviceYear<2015) {
+        if (android && clientDeviceYear<2015) {
 
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        else if (android==clientOS){
+        else if (android){
             System.out.println("Установите версию приложения для Android по ссылке");}
 
-       if (iOS==clientOS && clientDeviceYear<2015) {
+       if (iOS && clientDeviceYear<2015) {
            System.out.println("Установите облегченную версию приложения для iOS по ссылке");}
 
-       else if (iOS==clientOS){
+       else if (iOS){
            System.out.println("Установите версию приложения для iOS по ссылке");}
 
 
@@ -63,7 +61,7 @@ public class Main {
         System.out.println("Задача 5");
 
         int monthNumber = 12;
-        switch (monthNumber) {
+        switch (monthNumber){
             case 12:
             case 1:
             case 2:
