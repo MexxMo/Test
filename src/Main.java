@@ -3,33 +3,35 @@ public class Main {
 
         System.out.println("Задача 1");
 
-        byte clientOS=1;
 
-        boolean android = clientOS == 1;
-        boolean iOS =clientOS == 0;
+        char iOS = 0;
+        char android = 1;
 
-        if (android) {
+        byte clientOS = 1;
+
+
+        if (android==clientOS) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
-        if (iOS) {
+        if (iOS==clientOS) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
         System.out.println("Задача 2");
 
-        int clientDeviceYear = 2015;
+        int clientDeviceYear = 2014;
 
-        if (android && clientDeviceYear<2015) {
+        if (android==clientOS && clientDeviceYear<2015) {
 
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        else if (android){
+        else if (android==clientOS){
             System.out.println("Установите версию приложения для Android по ссылке");}
 
-       if (iOS && clientDeviceYear<2015) {
+       if (iOS==clientOS && clientDeviceYear<2015) {
            System.out.println("Установите облегченную версию приложения для iOS по ссылке");}
 
-       else if (iOS){
+       else if (iOS==clientOS){
            System.out.println("Установите версию приложения для iOS по ссылке");}
 
 
